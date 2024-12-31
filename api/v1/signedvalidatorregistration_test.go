@@ -66,7 +66,7 @@ func TestSignedValidatorRegistrationJSON(t *testing.T) {
 		},
 		{
 			name:  "SignatureInvalid",
-			input: []byte(`{"message":{"fee_recipient":"0x000102030405060708090a0b0c0d0e0f10111213","gas_limit":"100","timestamp":"100","pubkey":"0x000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f"},"signature":"invlaid"}`),
+			input: []byte(`{"message":{"fee_recipient":"0x000102030405060708090a0b0c0d0e0f10111213","gas_limit":"100","timestamp":"100","pubkey":"0x000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f"},"signature":"invalid"}`),
 			err:   "invalid value for signature: encoding/hex: invalid byte: U+0069 'i'",
 		},
 		{
