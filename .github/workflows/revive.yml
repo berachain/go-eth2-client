@@ -12,9 +12,9 @@ jobs:
   revive:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5.6.0
         with:
           cache: false
           go-version: '1.20'
-      - uses: actions/checkout@v4
-      - uses: morphy2k/revive-action@v2
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - uses: morphy2k/revive-action@bd8016177e3722fe0aad85e22507805641be5bb1 # v2.7.8
